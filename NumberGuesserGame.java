@@ -54,7 +54,8 @@ public class NumberGuesserGame {
 
 			System.out.print("Do you want to play the game again? (yes/no): ");
 			playAgain = sc.next().trim().toLowerCase();
-			while (!playAgain.equals("yes") && !playAgain.equals("no")) {
+			while (!playAgain.equals("yes") && !playAgain.equals("no") && !playAgain.equals("y")
+					&& !playAgain.equals("n")) {
 				System.out.print("Invalid input! Please enter 'y'/'yes' or 'n'/'no' : ");
 				playAgain = sc.next();
 			}
